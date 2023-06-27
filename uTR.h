@@ -1,16 +1,16 @@
 /*
  Copyright (c) 2019, Shinichi Morishita
  All rights reserved.
- 
+
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions are met:
- 
+
  1. Redistributions of source code must retain the above copyright notice, this
  list of conditions and the following disclaimer.
  2. Redistributions in binary form must reproduce the above copyright notice,
  this list of conditions and the following disclaimer in the documentation
  and/or other materials provided with the distribution.
- 
+
  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
  ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
  WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
@@ -21,7 +21,7 @@
  ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
- 
+
  The views and conclusions contained in the software and documentation are those
  of the authors and should not be interpreted as representing official policies,
  either expressed or implied, of the FreeBSD Project.
@@ -43,7 +43,7 @@ float MAX_DIS_RATIO;
 
 // Internal variables and data structures
 #define MAX_NUMBER_READS    10000
-#define MAX_READ_LENGTH     20000 //100000
+#define MAX_READ_LENGTH     1000000 //increased from original 20000
 #define MAX_ID_LENGTH       1000
 #define BLK 4096
 #define MAX_NUMBER_UNITS    100000
@@ -187,5 +187,3 @@ extern "C" {
 
 
 float time_get_non_self_overlapping_prefixes, time_coverage_by_units, time_set_cover_greedy;
-
-
